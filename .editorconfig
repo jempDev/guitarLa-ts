@@ -1,0 +1,58 @@
+# EditorConfig para proyectos React (JS/TS)
+# Coloca este archivo en la raíz del proyecto: .editorconfig
+root = true
+
+# Defaults (aplican a todos los ficheros si no hay sección más específica)
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# JavaScript / JSX
+[*.{js,jsx,mjs,cjs}]
+indent_size = 2
+indent_style = space
+charset = utf-8
+
+# TypeScript / TSX
+[*.{ts,tsx}]
+indent_size = 2
+indent_style = space
+charset = utf-8
+
+# JSON (usa 2 espacios para que coincida con la mayoría de proyectos)
+[*.json]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false    # importantes para JSON
+
+# Markdown / text files (legibilidad)
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+insert_final_newline = true
+
+# CSS / SCSS / Less
+[*.{css,scss,less}]
+indent_style = space
+indent_size = 2
+
+# HTML / JSX-like templates
+[*.{html,htm}]
+indent_style = space
+indent_size = 2
+
+# YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+# Makefile requiere tabs
+[Makefile]
+indent_style = tab
+trim_trailing_whitespace = false
